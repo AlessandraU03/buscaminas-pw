@@ -1,0 +1,22 @@
+<div class="tablero-container">
+    <div class="controls">
+      <label for="filas">Filas:</label>
+      <input id="filas" type="number" [value]="filas" (input)="actualizarFilas($event)" min="1" max="20">
+      
+      <label for="columnas">Columnas:</label>
+      <input id="columnas" type="number" [value]="columnas" (input)="actualizarColumnas($event)" min="1" max="20">
+  
+      <button (click)="reiniciarJuego()">Iniciar Juego</button>
+    </div>
+  
+    <div class="tablero">
+      <div *ngFor="let fila of tablero; let i = index" class="fila">
+        <app-celda
+          *ngFor="let celda of fila; let j = index"
+          [celda]="celda"
+          (click)="destaparCelda(i, j)"
+        ></app-celda>
+      </div>
+    </div>
+  </div>
+  

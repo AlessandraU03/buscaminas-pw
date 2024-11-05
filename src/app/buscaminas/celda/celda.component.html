@@ -1,0 +1,11 @@
+<div
+  class="celda"
+  [ngClass]="{'mina': celda.tieneMina, 'descubierta': celda.descubierta}"
+>
+  <ng-container *ngIf="celda.descubierta">
+   <span *ngIf="celda.tieneMina">💣</span>
+    <span *ngIf="!celda.tieneMina && celda.minasAdyacentes > 0">
+      {{ celda.minasAdyacentes }}
+    </span>
+  </ng-container>
+</div>
