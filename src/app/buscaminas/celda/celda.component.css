@@ -7,15 +7,15 @@
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    border: 1px solid #555;
+    border: 1px solid #4180ab;
     color: #333;
-    background-color: #888;
+    background-color: #e4ebf0;
     transition: background-color 0.2s, color 0.2s;
     user-select: none;
   }
   
   .celda.descubierta {
-    background-color: #ddd;
+    background-color: #bdd1de;
     color: #222;
     cursor: default;
     border: 1px solid #bbb;

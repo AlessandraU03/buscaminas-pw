@@ -107,6 +107,10 @@ export class TableroComponent implements OnInit {
     }
   }
 
+  iniciarJuego() {
+    this.iniciarTablero();
+  }
+
   reiniciarJuego() {
     this.gameOver = false;
     this.iniciarTablero();
